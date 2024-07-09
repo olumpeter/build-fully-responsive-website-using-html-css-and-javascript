@@ -127,15 +127,20 @@ article.active {
 }
 
 .sidebar {
-    max-height: 112px;
-    margin-bottom: 15px;
-    overflow: hidden;
-    transition: 0.5s ease-in-out;
     background: rgb(30, 30, 31);
     border: 1px solid rgb(56, 56, 56);
     border-radius: 20px;
     padding: 15px;
     box-shadow: -4px 8px 24px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    max-height: 112px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.sidebar.active {
+    max-height: 405px;
 }
 
 .sidebar-info {
@@ -144,10 +149,6 @@ article.active {
     justify-content: flex-start;
     align-items: center;
     gap: 15px;
-}
-
-.sidebar.active {
-    height: auto;
 }
 
 .sidebar.active .sidebar-more-info {
